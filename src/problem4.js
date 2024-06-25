@@ -7,4 +7,17 @@
  * @returns {function} - The Person constructor function.
  */
 
+export function Person(name,age){
+    this.name=name;
+    this.age=age;
+    this.introduce=function(){
+        return `Hi, I am ${this.name} and I am ${this.age} years old.`;
+    }
+    
+
+}
+
+let person=new Person('Bob',25);
+person.introduce()
+
 

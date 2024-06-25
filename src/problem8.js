@@ -1,3 +1,5 @@
+import { parse } from "path";
+
 /**
  * Problem 8: Deep Object Cloning
  *
@@ -7,6 +9,12 @@
  * @param {Object} obj - The object to be cloned.
  * @returns {Object} - A deep copy of the object.
  */
-function deepClone(obj) {
+export function deepClone(obj) {
     // Implement here
+    
+      let deepObj=JSON.parse(JSON.stringify(obj));
+
+      return deepObj;
 }
+
+deepClone({ a: 1, b: 2 })

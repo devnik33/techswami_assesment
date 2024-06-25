@@ -8,4 +8,20 @@
  */
 export function fetchData() {
     // Implement here
+
+   return new Promise(function(resolve, reject) {
+
+     setTimeout(()=>{
+        resolve("data");     
+   },1000)
+
+   })
+
+  //  promise.then((response)=>{
+  //    console.log(response);
+  //  }).catch((err)=>{
+  //   console.log(err);
+  //  })
 }
+
+

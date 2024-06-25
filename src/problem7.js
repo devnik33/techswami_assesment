@@ -11,4 +11,11 @@
  */
 function startCounter(callback, delay) {
     // Implement here
+     let count=0;
+    return callback(setInterval(()=>{
+        count++
+    },delay))
 }
+let count=0;
+const increment = (num) => { count = num; };
+        const counter = startCounter(increment, 100);

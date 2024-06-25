@@ -7,4 +7,10 @@
  *
  * @returns {object} - The calculator object.
  */
+exports.add=(a,b)=>{
+    return a+b;
+}
 
+exports.multiply=(a,b)=>{
+    return a*b;
+}

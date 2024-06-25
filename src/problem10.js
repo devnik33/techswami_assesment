@@ -7,6 +7,8 @@
  * @param {Array} arr - The deeply nested array.
  * @returns {Array} - The flattened array.
  */
-function flattenArray(arr) {
+export function flattenArray(arr) {
     // Implement here
+
+    return arr.flat(Infinity);
 }

@@ -6,6 +6,17 @@
  *
  * @returns {function} - A function that returns the next number in the sequence.
  */
-function createCounter() {
+export function createCounter() {
     // Implement here
+   let total=1;
+   return function(){
+    return total++;
+   }
+   
 }
+let counter=createCounter();
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+

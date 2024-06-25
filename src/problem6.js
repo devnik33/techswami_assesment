@@ -8,6 +8,19 @@
  * @param {number} b - The second number.
  * @returns {Promise<number>} - A promise that resolves with the sum after 500ms.
  */
-function delayedSum(a, b) {
+export async function delayedSum(a,b) {
     // Implement here
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+          resolve(a+b)
+        },500)
+    })
+
+
+
+  
 }
+//await delayedSum(3,5);
+
+
+
