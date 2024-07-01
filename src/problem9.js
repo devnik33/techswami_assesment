@@ -9,27 +9,7 @@
  * @returns {function} - The memoized function.
  */
 export function memoize(func) {
-    // Implement here
-    // let cache={};
-    // return function(...arg){
 
-    //     let n={
-    //         arg:JSON.parse(...arg),
-    //         result:0
-    //     }
-    //     console.log(n);
-        
-    //     console.log(n);
-    //     if(n in cache){
-    //         return cache[n];
-    //     }else{
-    //         let result=fn(...arg);
-    //         n.result=result;
-    //         console.log(result);
-    //         cache[n]=result;
-    //         return result;
-    //     }
-    // }
     let memoizedKeyValues = [
         /* {
              args: stringified_input_parameters
