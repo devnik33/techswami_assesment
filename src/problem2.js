@@ -7,7 +7,7 @@
  * @returns {object} - The calculator object.
  */
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects
-export function createCalculator(){
+export function createCalculato(){
     // Implement here
       let total=0;
          function add(a){

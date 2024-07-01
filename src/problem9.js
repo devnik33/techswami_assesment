@@ -59,10 +59,10 @@ export function memoize(func) {
              args: JSON.stringify(args),
              result: result
          })
-         memoizedKeyValues.push({
-            args:JSON.stringify(args),
-            result:result
-         })
+        //  memoizedKeyValues.push({
+        //     args:JSON.stringify(args),
+        //     result:result
+        //  })
  
          // return the result
          return result;

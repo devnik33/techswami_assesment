@@ -9,6 +9,15 @@
  */
 export function flattenArray(arr) {
     // Implement here
-
-    return arr.flat(Infinity);
+   let flattarray=[];
+    for(let i=0; i<arr.length; i++){
+        if(Array.isArray(arr[i])){
+           flattarray=flattarray.concat(flattenArray(arr[i]));
+           console.log(flattarray,'issarray');
+        }else{
+            flattarray.push(arr[i]);
+        }
+    }
+    return flattarray;
 }
+console.log(flattenArray([[[[1]], [2]], [[[3]], 4]]));
