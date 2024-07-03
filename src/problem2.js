@@ -7,20 +7,22 @@
  * @returns {object} - The calculator object.
  */
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects
-export function createCalculato(){
+export function createCalculator() {
+let calculator={
     // Implement here
-      let total=0;
-         function add(a){
-           total=total+a
-           return total;
-         }
-         function subtract(b){
-            total=total-b;
-            return total;
-         }
-         return {
-            add,
-            subtract
-         }
-    } 
+       total:0,
+       add(a){
+           return this.total=this.total+a
 
+         },
+         subtract(b){
+           return this.total=this.total-b;
+
+         }
+
+    }
+    return calculator;
+  }
+
+
+    
