@@ -8,21 +8,15 @@
  */
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects
 export function createCalculator() {
-let calculator={
+  let calculator = {
     // Implement here
-       total:0,
-       add(a){
-           return this.total=this.total+a
-
-         },
-         subtract(b){
-           return this.total=this.total-b;
-
-         }
-
-    }
-    return calculator;
-  }
-
-
-    
+    total: 0,
+    add(a) {
+      return (this.total = this.total + a);
+    },
+    subtract(b) {
+      return (this.total = this.total - b);
+    },
+  };
+  return calculator;
+}
