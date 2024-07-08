@@ -9,13 +9,28 @@
  * @param {number} delay - The interval delay in milliseconds.
  * @returns {object} - An object with a `stop` method to stop the counter.
  */
-function startCounter(callback, delay) {
-    // Implement here
-     let count=0;
-    return callback(setInterval(()=>{
-        count++
-    },delay))
+export function startCounter(callback, delay) {
+  // Implement here
+  let count = 1;
+  let intervalId;
+  let stopObj = {
+    stop() {
+      clearInterval(intervalId);
+    },
+  };
+
+  return (
+    (intervalId = setInterval(() => {
+      callback(count++);
+    }, delay)),
+    stopObj
+  );
 }
-let count=0;
-const increment = (num) => { count = num; };
-        const counter = startCounter(increment, 100);
+
+//   let count = 0;
+//   const increment = (num) => {
+//     count = num;
+//   };
+//   const counter = startCounter(increment, 100);
+
+//   counter.stop();
